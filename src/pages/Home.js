@@ -27,10 +27,26 @@ class Home extends React.Component {
       <div className="container">
         <div className="apod-container">
           <h2 className="apod">NASA's Image of the Day</h2>
-          { this.state.apod.media_type === "video" ? <iframe src={this.state.apod.url} className="apod-vid" title={this.state.apod.url} width="300px" height="200px"></iframe> : <img className="apod-img"  src={this.state.apod.hdurl} className="apod-img" alt={this.state.apod.hdurl} /> }
+          {this.state.apod.media_type === "video" ? (
+            <iframe
+              src={this.state.apod.url}
+              className="apod-vid"
+              title={this.state.apod.title}
+            ></iframe>
+          ) : (
+            <img
+              className="apod-img"
+              src={this.state.apod.hdurl}
+              alt={this.state.apod.hdurl}
+            />
+          )}
           <h2 className="apod-title">{this.state.apod.title}</h2>
           <p className="apod-explanation">{this.state.apod.explanation}</p>
-          <p className="apod-copyright">&copy; {this.state.apod.copyright}</p>
+          {this.state.apod.copyright ? (
+            <p className="apod-copyright">&copy; {this.state.apod.copyright}</p>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     );

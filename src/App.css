@@ -76,8 +76,10 @@ nav {
 }
 
 .apod-vid {
-    display: block;
-    margin: 20px auto;
+  display: block;
+  margin: 20px auto;
+  width: 854px;
+  height: 480px;
 }
 
 .apod-explanation {
@@ -89,7 +91,7 @@ nav {
   font-size: 10px;
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1200px) {
   /* Navbar */
   nav {
     min-height: 14vh;
@@ -112,6 +114,11 @@ nav {
     margin: 0;
   }
 
+  .apod-vid {
+    width: 640px;
+    height: 360px;
+  }
+
   .apod-img {
     width: 400px;
   }
@@ -121,7 +128,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 732px) {
+@media screen and (max-width: 768px) {
   .logo {
     font-size: 28px;
   }
@@ -139,6 +146,12 @@ nav {
   .apod-title {
     font-size: 24px;
   }
+
+  .apod-vid {
+    width: 426px;
+    height: 240px;
+  }
+
   .apod-explanation {
     font-size: 12px;
   }
@@ -161,6 +174,11 @@ nav {
   .apod,
   .apod-title {
     font-size: 20px;
+  }
+
+  .apod-vid {
+    width: 310px;
+    height: 200px;
   }
 
   .apod-img {
