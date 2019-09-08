@@ -9,7 +9,7 @@ class Home extends React.Component {
   componentDidMount() {
     axios
       .get(
-        "https://api.nasa.gov/planetary/apod?api_key=Mo9HjYXrAigWnWW9kpgRauq59C990DY0e3iOxTzO"
+        `https://api.nasa.gov/planetary/apod?api_key=Mo9HjYXrAigWnWW9kpgRauq59C990DY0e3iOxTzO`
       )
       .then(response => {
         this.setState({
@@ -27,7 +27,7 @@ class Home extends React.Component {
       <div className="container">
         <div className="apod-container">
           <h2 className="apod">NASA's Image of the Day</h2>
-          <img src={this.state.apod.hdurl} className="apod-img" alt={this.state.apod.hdurl} />
+          { this.state.apod.media_type === "video" ? <iframe src={this.state.apod.url} className="apod-vid" title={this.state.apod.url} width="300px" height="200px"></iframe> : <img className="apod-img"  src={this.state.apod.hdurl} className="apod-img" alt={this.state.apod.hdurl} /> }
           <h2 className="apod-title">{this.state.apod.title}</h2>
           <p className="apod-explanation">{this.state.apod.explanation}</p>
           <p className="apod-copyright">&copy; {this.state.apod.copyright}</p>

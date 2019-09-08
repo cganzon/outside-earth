@@ -75,6 +75,11 @@ nav {
   margin: 20px auto;
 }
 
+.apod-vid {
+    display: block;
+    margin: 20px auto;
+}
+
 .apod-explanation {
   text-align: start;
 }
