@@ -9,7 +9,7 @@ class Mars extends Component {
   componentDidMount() {
     axios
       .get(
-        `https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=Mo9HjYXrAigWnWW9kpgRauq59C990DY0e3iOxTzO`
+        `https://api.nasa.gov/insight_weather/?api_key=Mo9HjYXrAigWnWW9kpgRauq59C990DY0e3iOxTzO&feedtype=json&ver=1.0`
       )
       .then(response => {
         console.log(response);
@@ -25,7 +25,7 @@ class Mars extends Component {
   render() {
     return (
       <div>
-        <h1>This is the asteroids page</h1>
+        <h1>This is the mars page</h1>
       </div>
     );
   }

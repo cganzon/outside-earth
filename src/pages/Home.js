@@ -15,7 +15,6 @@ class Home extends React.Component {
         this.setState({
           apod: response.data
         });
-        console.log(this.state.apod);
       })
       .catch(error => {
         console.log(error);

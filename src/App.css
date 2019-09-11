@@ -36,6 +36,11 @@ nav {
   font-family: "Raleway", sans-serif;
 }
 
+.logo:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .nav-links {
   display: flex;
   width: 30%;
@@ -50,6 +55,11 @@ nav {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: white;
 }
 
 /* Home Page */
@@ -91,6 +101,26 @@ nav {
   font-size: 10px;
 }
 
+/* Rover Photos Page */
+.rover-title,
+.rover-info {
+  color: white;
+}
+
+.images-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  margin: 30px;
+  border-radius: 5px;
+}
+
+.rover-img {
+  display: block;
+  width: 500px;
+  height: auto;
+  margin: 20px auto;
+}
+
 @media screen and (max-width: 1200px) {
   /* Navbar */
   nav {
@@ -126,6 +156,12 @@ nav {
   .apod-explanation {
     font-size: 14px;
   }
+
+  /* Rover Photos Page */
+  .images-container {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -160,6 +196,19 @@ nav {
     text-align: right;
     font-size: 8px;
   }
+
+  /* Rover Photos Page */
+  .rover-title {
+    font-size: 28px;
+  }
+
+  .rover-info {
+    font-size: 14px;
+  }
+
+  .rover-img {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 544px) {
@@ -192,4 +241,13 @@ nav {
   .apod-copyright {
     font-size: 8px;
   }
+
+    /* Rover Photos Page */
+    .rover-title {
+      font-size: 24px;
+    }
+  
+    .rover-info {
+      font-size: 12px;
+    }
 }

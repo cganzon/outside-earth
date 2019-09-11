@@ -10,13 +10,13 @@ class Navbar extends Component {
         </Link>
         <ul className="nav-links">
           <li>
-            <Link to="/asteroids" className="nav-link">Asteroids</Link>
+            <Link to="/mars" className="nav-link">Mars</Link>
           </li>
           <li>
             <Link to="/asteroids" className="nav-link">Asteroids</Link>
           </li>
           <li>
-            <Link to="/asteroids" className="nav-link">Asteroids</Link>
+            <Link to="/rovers" className="nav-link">Curiosity</Link>
           </li>
         </ul>
       </nav>
